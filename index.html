@@ -90,71 +90,199 @@
 
 
 
-<!DOCTYPE html>
-<html>
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head>-->
+<!--	<meta charset="utf-8"/>-->
+<!--</head>-->
+<!--<body>-->
+<!--	<h1>my page</h1>-->
+<!--	<p>мої улюблені сайти:-->
+<!--		<a href="http://" target="_blank" >gog</a> -->
+<!--		<a href="http://" target="_blank" >design.ru</a> -->
+<!--		<a href="http://" target="_blank">demiart</a>-->
+<!--	</p>-->
+<!--	<div>-->
+<!--		За допомогою JavaScript запропонувати користувачу вибрати стиль для сторінки. А саме:-->
+<!--		<ul>-->
+<!--			<li>фон для сторінки</li>-->
+<!--			<li>тип шпифта на сторінці</li>-->
+<!--			<li>вирівнювання для заголовка h1</li>-->
+<!--			<li>фон для параграфа зі зсилками</li>-->
+<!--			<li>колір тексту у параграфі зі зсилками і для самих зсилок. При чому колір тексту для зсилок призначити у циклі</li>-->
+<!--			<li>колір, розмір, товщину тексту у елементі div</li>-->
+<!--			<li>тип маркера для маркованого списку на сторінці</li>-->
+<!--		</ul>-->
+<!--		Таким чином слід запропонувати користувачу ввести десять налаштувань сторінки і застосувати їх.<br/>-->
+<!--		ДОДАТОК ДО ЗАВДАННЯ: замість зсилок на конкретні сайти, вивести у панелі навігації зсилки на три сайти, які вкаже користувач. <br/>-->
+<!--		Наприклад користувач у віконце prompt() ввів адресу yandex.ru - в такому разі треба створити зсилку, яка вела б на сайт Яндекса, а текстом цієї зсилки (тим, по чому можна клікнути) буде також yandex.ru-->
+<!--	</div>-->
+	
+<!--	<div class="other_div">-->
+<!--		<a href="">Lorem ipsum dolor.</a>-->
+<!--		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse consectetur, sequi optio vero doloribus, porro. Neque hic perspiciatis fugiat itaque ipsa numquam inventore expedita velit. Corporis eligendi explicabo blanditiis, fugit repellendus vero repudiandae dolores veniam voluptatum quo. Dolore, assumenda, repellat.-->
+<!--	</div>-->
+<!--	<script>-->
+<!--	var style_body = document.body.style;-->
+<!--	style_body.backgroundColor = prompt('background color?', 'green');-->
+<!--	style_body.fontSize = prompt('fontSize?', '14px');-->
+<!--	document.getElementsByTagName('h1')[0].style.textAlign = prompt('text aling?', 'center');-->
+<!--	document.getElementsByTagName('p')[0].style.backgroundColor = prompt('backgroundColor p?', 'red');-->
+	 
+<!--	var color_a = prompt('color', 'blue');-->
+<!--	document.getElementsByTagName('p')[0].style.color = color_a;-->
+<!--	var child = document.getElementsByTagName('a');-->
+<!--	 for (var i = 0 ; i < child.length; i++) {-->
+<!--	 	child[i].style.color= color_a;-->
+<!--	}-->
+	 
+<!--	var style_div  = document.getElementsByTagName('div')[0].style;-->
+<!--	style_div.color = prompt('color', 'orange');-->
+<!--	style_div.width = prompt('width', '600px');-->
+<!--	style_div.height = prompt('height', '600px');-->
+<!--	style_div.fontWeight = prompt('weight 300-900', '900');-->
+	
+<!--	document.getElementsByTagName('ul')[0].style.listStyleType =prompt('list-style-type ul?', 'square'); -->
+	
+<!--	var site = document.getElementsByTagName('a');-->
+<!--	for ( var i = 0 ; i< site.length ; i++){-->
+<!--		var you_site =  prompt('Write you favorite site' + ' ' + (i + 1) , 'google.com');-->
+<!--		site[i].innerHTML = you_site;-->
+<!--		site[i].href = 'http://' + you_site;-->
+<!--	}-->
+<!--	</script>-->
+<!--</body>-->
+<!--</html>-->
+
+
+<!doctype html>
+<html lang="en">
 <head>
-	<meta charset="utf-8"/>
+	<meta charset="UTF-8">
+	<title>Document</title>
 </head>
 <body>
-	<h1>my page</h1>
-	<p>мої улюблені сайти:
-		<a href="http://" target="_blank" >gog</a> 
-		<a href="http://" target="_blank" >design.ru</a> 
-		<a href="http://" target="_blank">demiart</a>
-	</p>
-	<div>
-		За допомогою JavaScript запропонувати користувачу вибрати стиль для сторінки. А саме:
-		<ul>
-			<li>фон для сторінки</li>
-			<li>тип шпифта на сторінці</li>
-			<li>вирівнювання для заголовка h1</li>
-			<li>фон для параграфа зі зсилками</li>
-			<li>колір тексту у параграфі зі зсилками і для самих зсилок. При чому колір тексту для зсилок призначити у циклі</li>
-			<li>колір, розмір, товщину тексту у елементі div</li>
-			<li>тип маркера для маркованого списку на сторінці</li>
-		</ul>
-		Таким чином слід запропонувати користувачу ввести десять налаштувань сторінки і застосувати їх.<br/>
-		ДОДАТОК ДО ЗАВДАННЯ: замість зсилок на конкретні сайти, вивести у панелі навігації зсилки на три сайти, які вкаже користувач. <br/>
-		Наприклад користувач у віконце prompt() ввів адресу yandex.ru - в такому разі треба створити зсилку, яка вела б на сайт Яндекса, а текстом цієї зсилки (тим, по чому можна клікнути) буде також yandex.ru
-	</div>
-	
-	<div class="other_div">
-		<a href="">Lorem ipsum dolor.</a>
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse consectetur, sequi optio vero doloribus, porro. Neque hic perspiciatis fugiat itaque ipsa numquam inventore expedita velit. Corporis eligendi explicabo blanditiis, fugit repellendus vero repudiandae dolores veniam voluptatum quo. Dolore, assumenda, repellat.
-	</div>
 	<script>
-	var style_body = document.body.style;
-	style_body.backgroundColor = prompt('background color?', 'green');
-	style_body.fontSize = prompt('fontSize?', '14px');
-	document.getElementsByTagName('h1')[0].style.textAlign = prompt('text aling?', 'center');
-	document.getElementsByTagName('p')[0].style.backgroundColor = prompt('backgroundColor p?', 'red');
-	 
-	var color_a = prompt('color', 'blue');
-	document.getElementsByTagName('p')[0].style.color = color_a;
-	var child = document.getElementsByTagName('a');
-	 for (var i = 0 ; i < child.length; i++) {
-	 	child[i].style.color= color_a;
-	}
-	 
-	var style_div  = document.getElementsByTagName('div')[0].style;
-	style_div.color = prompt('color', 'orange');
-	style_div.width = prompt('width', '600px');
-	style_div.height = prompt('height', '600px');
-	style_div.fontWeight = prompt('weight 300-900', '900');
+		
+		// function sayHello(a) {
+		// 	alert('Hello' +a );
+		// }
+		// var  name=prompt('name');
+		// sayHello(name);
+		
+		// for (var i = 0 ; i < 3 ; i++) {
+		// 	var userName = prompt('name');
+		// 	sayHello(userName);
+		// }
+		
+		// function f1() {
+		// 	var a = 1;
+		// 	var b = a+4;
+		// 	var c = b-2*2;
+		// 	return (a+b)*4-c;
+		// }
+		// alert (f1()+5);
+		
+		
+		
+		
+		 //var number = prompt('number');
+		 //var degree= prompt(' degree' );
+		 
+		 
+		 //function f1(n, d) {
+		 //	var result = 1; z = false;
+		 //		if (d!=0) {
+		 //			if( d < 0 ) {
+		 //				d = -d;
+		 //				z = true;
+		 //			}
+		 //			for (var i = 1; i <=d; i++){
+		 //				result *=n;
+		 //			}
+		 //			if (z) {
+		 //				result= 1/result;
+		 //			}
+		 //		}
+		 //		return result;
+		 //}
+		 //alert(f1(number, degree));
+		 
+		 
+	// function chekAge(age){
+	// 	if(age>=18){
+	// 		return true;
+	// 	} else{
+	// 		return confirm("Батьки дозволили?");
+	// 	}
+	// }
 	
-	document.getElementsByTagName('ul')[0].style.listStyleType =prompt('list-style-type ul?', 'square'); 
-	
-	var site = document.getElementsByTagName('a');
-	for ( var i = 0 ; i< site.length ; i++){
-		var you_site =  prompt('Write you favorite site' + ' ' + (i + 1) , 'google.com');
-		site[i].innerHTML = you_site;
-		site[i].href = 'http://' + you_site;
-	}
+	// var age = prompt("Ваш вік?");
+	// if(chekAge(age)){
+	// 	alert("Доступ дозволено!");
+	// }else{
+	// 	alert("У доступі відмовлено!");
+	// }
+		
+				
+				
+				
+				
+		function max(a, b, c, d) {
+		var a = +prompt('which number more 1');
+		var b = +prompt('which number more 2');
+		var c = +prompt('which number more 3');
+		var d = +prompt('which number more 4');
+		  if (a < b & b < c & c < d) {
+		    return d;
+		  } else if ( a < b & b < c ) {
+		    return c;
+		  }else if ( a < b ) {
+		  	return b;
+		  } else {
+		  	return a ;
+		  }
+		}
+		alert( 'Max number  ' +  max());
 
 
+		var c = 1;
+		var a = +prompt('geometric progression of numbers 1 ', '4');
+		var b = +prompt('geometric progression of numbers 2 ', '3');
+		function geo ( a, b ) {
+			var sum = 1;
+			for ( var i = 1; i < a ; i++ ) {
+				sum = sum * b;
+				c += sum; 
+			}
+			return	c ;
+		}
+		alert(geo( a, b));
 
+		var a = +prompt( ' prime numbers  1', '2');
+		var b = +prompt( ' prime numbers 2', '99');
+		var c = ' ';
+		if ( a > b) {
+			d = b;
+			b = a;
+			a = d;
+		}
+		function num() {
+			nextPrime:
+			for (var i = a; i < b; i++) {
 
-
+     			for (var j = 2; j < i; j++) {
+    			 		  if (i % j == 0) continue nextPrime;
+    			 		  }
+    			 	 c += i + ' ';
+   			} 
+   			return c ; 
+		}
+   		alert(num());
+		
+		
+		
+		
 	</script>
 </body>
 </html>
